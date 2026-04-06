@@ -1,7 +1,13 @@
+import Nav from '@/src/components/Nav';
+import PoolTableScene from '@/src/components/PoolTableScene';
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-green-900 text-white flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Pool Pattern Engine</h1>
-    </main>
+    <div style={{ minHeight: '100vh', background: '#0d1117', display: 'flex', flexDirection: 'column' }}>
+      <Nav />
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px', overflow: 'auto' }}>
+        <PoolTableScene />
+      </main>
+    </div>
   );
 }
